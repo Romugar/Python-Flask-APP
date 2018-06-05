@@ -1,14 +1,13 @@
-from flask import Flask
-
+from flask import Flask, render_template
 
 __author__ = "roberto munoz garcia"
 
 app = Flask(__name__)
-
+app.secret_key = "dnH0xA50QiPdFex9VnfzfORN9q6Z4eTs"
 
 @app.route("/")
-def hello_method():
-    return "Hello, world!"
+def login_template():
+    return render_template("login.html")
 
 
 if __name__ == "__main__":
