@@ -19,7 +19,6 @@ class User(object):
         user = Database.find_one("users", {"email": email})
         if user is not None:
             # Compara la contraseña
-            try_again = user
             return user.password == pbkdf2_sha512.verify(password, user.password)
         else:
             return False
