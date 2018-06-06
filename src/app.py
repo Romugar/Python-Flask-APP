@@ -17,7 +17,7 @@ def initialize_database():
     Database.initialize()
 
 
-@app.route("/auth/login", methods=["POST"])
+@app.route("/home", methods=["POST"])
 def login_user():
     email = request.form["email"]
     password = request.form["password"]
