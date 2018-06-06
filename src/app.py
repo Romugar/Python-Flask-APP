@@ -26,6 +26,8 @@ def login_user():
         User.login(email)
     else:
         session["email"] = None
+        try_again = "Usuario o contraseña incorrectos"
+        return render_template("login.html", mensaje=try_again)
 
     return render_template("home.html", email=session["email"])
 
