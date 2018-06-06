@@ -9,8 +9,8 @@ class Database(object):
 
     @staticmethod
     def initialize():
-        client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client.get_database()
+        client = pymongo.MongoClient("mongodb://ekpro:ekpro123@ds247330.mlab.com:47330/heroku_7p7jgn5l")
+        Database.DATABASE = client["heroku_7p7jgn5l"]
 
     @staticmethod
     def find_one(collection, query):
