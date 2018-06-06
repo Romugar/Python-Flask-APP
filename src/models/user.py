@@ -1,6 +1,7 @@
 import uuid
 from flask import session
 from src.common.database import Database
+from passlib.hash import pbkdf2_sha512
 
 __author__ = "Roberto Munoz Garcia"
 
@@ -12,20 +13,13 @@ class User(object):
         self._id = uuid.uuid4().hex if _id is None else _id
 
 
-    @classmethod
-    def get_by_email(cls, email):
-        data = Database.find_one("users", {"email": email})
-        if data is not None:
-            return cls(**data)
-
-
     @staticmethod
     def login_valid(email, password):
         # validar usuario y contraseña
-        user = User.get_by_email(email)
+        user = Database.find_one("users", {"email": email})
         if user is not None:
             # Compara la contraseña
-            return user.password == password
+            return user.password == pbkdf2_sha512.verify(password, user["password"])
         return False
 
 
