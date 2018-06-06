@@ -17,13 +17,11 @@ class User(object):
     def login_valid(email, password):
         # validar usuario y contraseña
         user = Database.find_one("users", {"email": email})
-        return True
-        """
         if user is not None:
             # Compara la contraseña
             try_again = user
             return render_template("login.html", mensaje=try_again)
             # return user.password == pbkdf2_sha512.verify(password, user["password"])
         else:
-            return False"""
+            return False
 
