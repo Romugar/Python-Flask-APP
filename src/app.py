@@ -19,18 +19,19 @@ def initialize_database():
 
 @app.route("/home", methods=["GET", "POST"])
 def login_user():
-    email = request.form["email"]
-    password = request.form["password"]
+    if request.method == "POST":
+        email = request.form["email"]
+        password = request.form["password"]
 
-    if session["email"] is not None:
-        return render_template("home.html")
-    elif User.login_valid(email, password):
-        session["email"] = email
-        return render_template("home.html")
+        if User.login_valid(email, password):
+            session["email"] = email
+            return render_template("home.html")
+        else:
+            session["email"] = None
+            try_again = "Usuario o contraseña incorrecta"
+            return render_template("login.html", mensaje=try_again)
     else:
-        session["email"] = None
-        try_again = "Usuario o contraseña incorrecta"
-        return render_template("login.html", mensaje=try_again)
+        return render_template("home.html")
 
 
 if __name__ == "__main__":
