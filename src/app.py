@@ -24,6 +24,7 @@ def login_user():
     if session["email"] is not None:
         return render_template("home.html")
     elif User.login_valid(email, password):
+        session["email"] = email
         return render_template("home.html")
     else:
         session["email"] = None
