@@ -1,8 +1,7 @@
-html,
-body {
+html, body {
   height: 100%;
 }
-. login-body {
+.login-body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
