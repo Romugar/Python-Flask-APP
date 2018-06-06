@@ -17,10 +17,11 @@ def initialize_database():
     Database.initialize()
 
 
-@app.route("/home", methods=["POST"])
+@app.route("/home", methods=["GET", "POST"])
 def login_user():
     email = request.form["email"]
     password = request.form["password"]
+
     if session["email"] is not None:
         return render_template("home.html")
     elif User.login_valid(email, password):
