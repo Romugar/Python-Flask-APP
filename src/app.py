@@ -9,6 +9,7 @@ app.secret_key = "dnH0xA50QiPdFex9Vn7zfORN9q6Z4eTs"
 
 @app.route("/")
 def login_template():
+    session["email"] = None
     return render_template("login.html")
 
 
