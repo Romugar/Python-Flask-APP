@@ -23,8 +23,7 @@ def login_user():
     password = request.form["password"]
 
     if User.login_valid(email, password):
-        session["email"] = email
-        return render_template("home.html", email=session["email"])
+        return render_template("home.html")
     else:
         session["email"] = None
         try_again = "Usuario o contraseña incorrecta"
