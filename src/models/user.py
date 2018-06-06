@@ -20,8 +20,7 @@ class User(object):
         if user is not None:
             # Compara la contraseña
             try_again = user
-            return render_template("login.html", mensaje=try_again)
-            # return user.password == pbkdf2_sha512.verify(password, user["password"])
+            return user.password == pbkdf2_sha512.verify(password, user["password"])
         else:
             return False
 
