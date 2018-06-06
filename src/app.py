@@ -19,13 +19,13 @@ def initialize_database():
 
 @app.route("/auth/login", methods=["POST"])
 def login_user():
-    # email = request.form["email"]
-    # password = request.form["password"]
+    email = request.form["email"]
+    password = request.form["password"]
 
-    # if User.login_valid(email, password):
-        # User.login(email)
-    # else:
-    session["email"] = None
+    if User.login_valid(email, password):
+        User.login(email)
+    else:
+        session["email"] = None
 
     return render_template("home.html", email=session["email"])
 
