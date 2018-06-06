@@ -24,6 +24,8 @@ def login_user():
 
     if User.login_valid(email, password):
         session["email"] = email
+        user = Database.find_one("users", {"email": email})
+        return render_template("login.html", mensaje=user)
         # return render_template("home.html", email=session["email"])
     else:
         session["email"] = None

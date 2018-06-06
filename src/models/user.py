@@ -17,7 +17,7 @@ class User(object):
     def login_valid(email, password):
         # validar usuario y contraseña
         user = Database.find_one("users", {"email": email})
-        return render_template("login.html", mensaje=user)
+        return True
         """
         if user is not None:
             # Compara la contraseña
