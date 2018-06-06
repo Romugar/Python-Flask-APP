@@ -23,7 +23,7 @@ def login_user():
     password = request.form["password"]
 
     if User.login_valid(email, password):
-        User.login(email)
+        session["email"] = email
         # return render_template("home.html", email=session["email"])
     else:
         session["email"] = None
