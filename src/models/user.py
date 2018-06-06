@@ -4,6 +4,7 @@ from src.common.database import Database
 
 __author__ = "Roberto Munoz Garcia"
 
+
 class User(object):
     def __init__(self, email, password, _id=None):
         self.email = email
