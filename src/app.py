@@ -7,7 +7,7 @@ app.secret_key = "dnH0xA50QiPdFex9VnfzfORN9q6Z4eTs"
 
 @app.route("/")
 def login_template():
-    return render_template("login.html")
+    return render_template("home.html")
 
 
 if __name__ == "__main__":
