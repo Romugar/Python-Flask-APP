@@ -11,3 +11,7 @@ class Database(object):
     def initialize():
         client = pymongo.MongoClient(Database.URI)
         Database.DATABASE = client.get_database()
+
+    @staticmethod
+    def find_one(collection, query):
+        return Database.DATABASE[collection].find_one(query)
