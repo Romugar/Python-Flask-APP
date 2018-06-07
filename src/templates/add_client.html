@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="jumbotron">
-<table cellpadding="0"; cellspacing="0">
+<div class="jumbotron text-center">
+    <table cellpadding="0"; cellspacing="0" style="margin: 0 auto;">
         <tr>
             <td><label for="title">Titulo:</label><input type="text" /></td>
             <td><label for="title">Titulo:</label><input type="text" /></td>
             <td><input type="text" /></td>
-            <td width="60"><input type="text" /></td>
-        <td width="60"><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
         </tr>
         <tr>
             <td><input type="text1" /></td>
@@ -30,7 +30,7 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
         </tr>
-</table>
-<button type="submit" class="btn btn-success" id="submit-button">GUARDAR CLIENTE</button>
-    </div>
+    </table>
+    <button type="submit" class="btn" id="submit-button">GUARDAR CLIENTE</button>
+</div>
 {% endblock %}
