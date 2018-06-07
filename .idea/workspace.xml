@@ -61,7 +61,7 @@
             <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="144">
-                  <caret line="8" column="190" selection-start-line="8" selection-start-column="190" selection-end-line="8" selection-end-column="190" />
+                  <caret line="8" column="194" selection-start-line="8" selection-start-column="194" selection-end-line="8" selection-end-column="194" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -657,7 +657,7 @@
     <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="190" selection-start-line="8" selection-start-column="190" selection-end-line="8" selection-end-column="190" />
+          <caret line="8" column="194" selection-start-line="8" selection-start-column="194" selection-end-line="8" selection-end-column="194" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
