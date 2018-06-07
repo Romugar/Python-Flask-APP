@@ -1,11 +1,14 @@
 import uuid
 from src.common.database import Database
+import datetime
 
 __author__ = "Roberto Munoz Garcia"
 
 class Cliente(object):
 
-    def __init__(self, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email, _id=None):
+    def __init__(self, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email, fecha_alta=datetime.date.today(),_id=None):
+        self._id = uuid.uuid4().hex if _id is None else _id
+        self.fecha_alta = fecha_alta
         self.cif = cif
         self.direccion = direccion
         self.poblacion = poblacion
@@ -21,7 +24,6 @@ class Cliente(object):
         self.tfno1 = tfno1
         self.tfno2 = tfno2
         self.email = email
-        self._id = uuid.uuid4().hex if _id is None else _id
 
     def save_to_mongo(self):
         Database.insert(collection="clientes", data=self.json())
@@ -29,6 +31,7 @@ class Cliente(object):
     def json(self):
         return {
             "_id": self._id,
+            "fecha_alta": self.fecha_alta,
             "cif": self.cif,
             "direccion": self.direccion,
             "poblacion": self.poblacion,
