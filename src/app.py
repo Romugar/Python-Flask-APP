@@ -39,7 +39,12 @@ def login_user():
 
 @app.route("/nuevo_cliente", methods=["GET", "POST"])
 def add_clients():
-    pass
+    if request.method == "POST":
+        pass
+    elif request.method == "GET" and session["email"] is not None:
+        return render_template("add_client.html")
+    else:
+        return render_template("login.html")
 
 
 if __name__ == "__main__":
