@@ -42,3 +42,7 @@ body {
   border-color: #AC58FA;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(172, 88, 250, 0.6);
 }
+.busqueda {
+  padding-top: 5px;
+  padding-bottom : 5px;
+}
