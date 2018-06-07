@@ -9,25 +9,28 @@
 </head>
 <body class="text-center">
 {% if session['email'] %}
-<nav class="navbar navbar-light" style="background-color: #AC58FA;">
-    <div class="navbar-nav" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-            <li>
-                 <a class="navbar-brand" href="/home" title="home">INICIO</a>
-            </li>
-            <li>
-                <a href="/nuevo_cliente">AÑADIR CLIENTES</a>
-            </li>
-            <li>
-                <a href="/plantillas">PLANTILLAS</a>
-            </li>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="/">SALIR</a>
-                </li>
-            </ul>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #AC58FA;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/home" title="home">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/nuevo_cliente">AÑADIR CLIENTES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/plantillas">PLANTILLAS</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="/">SALIR</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 {% endif %}
 {% block content %}
