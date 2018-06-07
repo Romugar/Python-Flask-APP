@@ -5,16 +5,15 @@ __author__ = "Roberto Munoz Garcia"
 
 class Cliente(object):
 
-    def __init__(self, cif, direccion, poblacion, cp, provincia, diocesis, arciprestazgo, parroquia, razon, web, responsable, cargo, dni, tfno1, tfno2, email, _id=None):
+    def __init__(self, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email, _id=None):
         self.cif = cif
         self.direccion = direccion
         self.poblacion = poblacion
         self.cp = cp
         self.provincia = provincia
+        self.parroquia_razon = parroquia_razon
         self.diocesis = diocesis
         self.arciprestazgo = arciprestazgo
-        self.parroquia = parroquia
-        self.razon = razon
         self.web = web
         self.responsable = responsable
         self.cargo = cargo
@@ -35,10 +34,9 @@ class Cliente(object):
             "poblacion": self.poblacion,
             "cp": self.cp,
             "provincia": self.provincia,
+            "parroquia_razon": self.parroquia_razon,
             "diocesis": self.diocesis,
             "arciprestazgo": self.arciprestazgo,
-            "parroquia": self.parroquia,
-            "razon": self.razon,
             "web": self.web,
             "responsable": self.responsable,
             "cargo": self.cargo,

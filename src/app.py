@@ -45,10 +45,9 @@ def add_clients():
         poblacion = request.form["poblacion"]
         cp = request.form["cp"]
         provincia = request.form["provincia"]
+        parroquia_razon = request.form["parroquia_razon"]
         diocesis = request.form["diocesis"]
         arciprestazgo = request.form["arciprestazgo"]
-        parroquia = request.form["parroquia"]
-        razon = request.form["razon"]
         web = request.form["web"]
         responsable = request.form["responsable"]
         cargo = request.form["cargo"]
@@ -57,7 +56,7 @@ def add_clients():
         tfno2 = request.form["tfno2"]
         email = request.form["email"]
 
-        add_client = Cliente(cif, direccion, poblacion, cp, provincia, diocesis, arciprestazgo, parroquia, razon, web, responsable, cargo, dni, tfno1, tfno2, email)
+        add_client = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
         add_client.save_to_mongo()
 
         return render_template("add_client.html", mensaje="Cliente guardado con éxito")
