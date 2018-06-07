@@ -37,5 +37,10 @@ def login_user():
         return render_template("login.html")
 
 
+@app.route("/nuevo_cliente", methods=["GET", "POST"])
+def add_clients():
+    pass
+
+
 if __name__ == "__main__":
     app.run(debug=app.config['DEBUG'], port=4990)

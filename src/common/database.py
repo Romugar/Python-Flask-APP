@@ -13,5 +13,9 @@ class Database(object):
         Database.DATABASE = client["heroku_7p7jgn5l"]
 
     @staticmethod
+    def insert(collection, data):
+        Database.DATABASE[collection].insert(data)
+
+    @staticmethod
     def find_one(collection, query):
         return Database.DATABASE[collection].find_one(query)
