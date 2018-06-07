@@ -1,59 +1,93 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron text-center">
-    <table class="table table-striped table-bordered">
+    <form id="add_client" action="/nuevo_cliente" method="post">
+      <table class="table table-striped table-bordered">
         <tr>
-            <td>C.I.F.</td>
-            <td>Dirección</td>
-            <td>Población</td>
-            <td>C.P.</td>
-            <td>Provincia</td>
+          <td>C.I.F.</td>
+          <td>Dirección</td>
+          <td>Población</td>
+          <td>C.P.</td>
+          <td>Provincia</td>
         </tr>
         <tr>
-            <td><input type="text1" class="form-control"/></td>
-            <td><input type="text1" class="form-control"/></td>
-            <td><input type="text1" class="form-control"/></td>
-            <td><input type="text1" class="form-control"/></td>
-            <td><input type="text1" class="form-control"/></td>
+          <td>
+            <input type="text" id="cif" class="form-control" name="cif"/>
+          </td>
+          <td>
+            <input type="text" id="direccion" class="form-control" name="direccion"/>
+          </td>
+          <td>
+            <input type="text" id="poblacion" class="form-control" name="poblacion"/>
+          </td>
+          <td>
+            <input type="text" id="cp" class="form-control" name="cp"/>
+          </td>
+          <td>
+            <input type="text" id="provincia" class="form-control" name="provincia"/>
+          </td>
         </tr>
       </table>
       <br/>
       <table class="table table-striped">
-          <tr>
-              <td>Diócesis</td>
-              <td>Arciprestazgo</td>
-              <td>Parroquia</td>
-              <td>Razón social</td>
-              <td>Web</td>
-          </tr>
-          <tr>
-              <td><input type="text1" class="form-control"/></td>
-              <td><input type="text1" class="form-control"/></td>
-              <td><input type="text1" class="form-control"/></td>
-              <td><input type="text1" class="form-control"/></td>
-              <td><input type="text1" class="form-control"/></td>
-          </tr>
+        <tr>
+          <td>Diócesis</td>
+          <td>Arciprestazgo</td>
+          <td>Parroquia</td>
+          <td>Razón social</td>
+          <td>Web</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="diocesis" class="form-control" name="diocesis"/>
+          </td>
+          <td>
+            <input type="text" id="arciprestazgo" class="form-control" name="arciprestazgo"/>
+          </td>
+          <td>
+            <input type="text" id="parroquia" class="form-control" name="parroquia"/>
+          </td>
+          <td>
+            <input type="text" id="razon" class="form-control" name="razon"/>
+          </td>
+          <td>
+            <input type="text" id="web" class="form-control" name="web"/>
+          </td>
+        </tr>
       </table>
       <br/>
       <table class="table table-striped">
         <tr>
-            <td>Responsable de seguridad / Párroco</td>
-            <td>Cargo</td>
-            <td>D.N.I.</td>
-            <td>Tfno. 1</td>
-            <td>Tfno. 2</td>
-            <td>E-mail</td>
+          <td>Responsable de seguridad / Párroco</td>
+          <td>Cargo</td>
+          <td>D.N.I.</td>
+          <td>Tfno. 1</td>
+          <td>Tfno. 2</td>
+          <td>E-mail</td>
         </tr>
         <tr>
-            <td><input type="text" class="form-control"/></td>
-            <td><input type="text" class="form-control"/></td>
-            <td><input type="text" class="form-control"/></td>
-            <td><input type="text" class="form-control"/></td>
-            <td><input type="text" class="form-control"/></td>
-            <td><input type="text" class="form-control"/></td>
+          <td>
+            <input type="text" id="responsable" class="form-control" name="responsable"/>
+          </td>
+          <td>
+            <input type="text" id="cargo" class="form-control" name="cargo"/>
+          </td>
+          <td>
+            <input type="text" id="dni" class="form-control" name="dni"/>
+          </td>
+          <td>
+            <input type="text" id="tfno1" class="form-control" name="tfno1"/>
+          </td>
+          <td>
+            <input type="text" id="tfno2" class="form-control" name="tfno2"/>
+          </td>
+          <td>
+            <input type="text" id="email" class="form-control" name="email"/>
+          </td>
         </tr>
-    </table>
-    <br/>
-    <button type="submit" class="btn" id="submit-button">GUARDAR CLIENTE</button>
-</div>
+      </table>
+      <br/>
+      <button type="submit" class="btn" id="submit-button">GUARDAR CLIENTE</button>
+    </form>
+  </div>
 {% endblock %}

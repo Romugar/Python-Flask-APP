@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session
 from src.common.database import Database
+from src.models.cliente import Cliente
 from src.models.user import User
 
 __author__ = "roberto munoz garcia"
@@ -30,7 +31,7 @@ def login_user():
         else:
             session["email"] = None
             try_again = "Usuario o contraseña incorrecta"
-            return render_template("login.html", mensaje=try_again)
+            return render_template("login.html", mensaje="Usuario o contraseña incorrecta")
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
     else:
@@ -40,7 +41,27 @@ def login_user():
 @app.route("/nuevo_cliente", methods=["GET", "POST"])
 def add_clients():
     if request.method == "POST":
-        pass
+        cif = request.form["cif"]
+        direccion = request.form["direccion"]
+        poblacion = request.form["poblacion"]
+        cp = request.form["cp"]
+        provincia = request.form["provincia"]
+        diocesis = request.form["diocesis"]
+        arciprestazgo = request.form["arciprestazgo"]
+        parroquia = request.form["parroquia"]
+        razon = request.form["razon"]
+        web = request.form["web"]
+        responsable = request.form["responsable"]
+        cargo = request.form["cargo"]
+        dni = request.form["dni"]
+        tfno1 = request.form["tfno1"]
+        tfno2 = request.form["tfno2"]
+        email = request.form["email"]
+
+        add_client = Cliente(cif, direccion, poblacion, cp, provincia, diocesis, arciprestazgo, parroquia, razon, web, responsable, cargo, dni, tfno1, tfno2, email)
+        add_client.save_to_mongo()
+
+
     elif request.method == "GET" and session["email"] is not None:
         return render_template("add_client.html")
     else:
