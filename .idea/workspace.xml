@@ -18,8 +18,8 @@
           <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="355">
-                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+                <state relative-caret-position="306">
+                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
                   <folding>
                     <element signature="e#0#58#0" expanded="true" />
                   </folding>
@@ -60,8 +60,8 @@
           <file leaf-file-name="cliente.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+                <state relative-caret-position="144">
+                  <caret line="8" column="190" selection-start-line="8" selection-start-column="190" selection-end-line="8" selection-end-column="190" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -106,8 +106,8 @@
           <file leaf-file-name="add_client.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="137">
-                  <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+                <state relative-caret-position="317">
+                  <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -639,15 +639,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="317">
+          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="306">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
@@ -656,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="144">
+          <caret line="8" column="190" selection-start-line="8" selection-start-column="190" selection-end-line="8" selection-end-column="190" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

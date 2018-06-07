@@ -6,7 +6,7 @@ __author__ = "Roberto Munoz Garcia"
 
 class Cliente(object):
 
-    def __init__(self, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email, fecha_alta=datetime.date.today(),_id=None):
+    def __init__(self, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email, fecha_alta=datetime.datetime.now(),_id=None):
         self._id = uuid.uuid4().hex if _id is None else _id
         self.fecha_alta = fecha_alta
         self.cif = cif
