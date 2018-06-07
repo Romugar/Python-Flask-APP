@@ -30,7 +30,6 @@ def login_user():
             return render_template("home.html")
         else:
             session["email"] = None
-            try_again = "Usuario o contraseña incorrecta"
             return render_template("login.html", mensaje="Usuario o contraseña incorrecta")
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
@@ -61,7 +60,7 @@ def add_clients():
         add_client = Cliente(cif, direccion, poblacion, cp, provincia, diocesis, arciprestazgo, parroquia, razon, web, responsable, cargo, dni, tfno1, tfno2, email)
         add_client.save_to_mongo()
 
-
+        return render_template("add_client.html", mensaje="Cliente guardado con éxito")
     elif request.method == "GET" and session["email"] is not None:
         return render_template("add_client.html")
     else:

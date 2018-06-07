@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron text-center">
+    <h4 style="color:green;">{{ mensaje }}</h4>
     <form id="add_client" action="/nuevo_cliente" method="post">
       <table class="table table-striped table-bordered">
         <tr>
