@@ -31,8 +31,10 @@ def login_user():
             session["email"] = None
             try_again = "Usuario o contraseña incorrecta"
             return render_template("login.html", mensaje=try_again)
-    else:
+    elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
+    else:
+        return render_template("login.html")
 
 
 if __name__ == "__main__":
