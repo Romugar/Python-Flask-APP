@@ -88,8 +88,8 @@
           <file leaf-file-name="find_clients.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+                <state relative-caret-position="114">
+                  <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -669,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+        <state relative-caret-position="114">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
         </state>
       </provider>
     </entry>
