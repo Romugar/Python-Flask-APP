@@ -115,24 +115,25 @@
           <td></td>
           <td></td>
 
-          {% else %}
-            <h4>No se han encontrado clientes</h4>
-          {% endif %}
+
       </table>
     <table class="table">
     <form id="create_documents" action="/crear_documentos" method="post">
-        <button type="submit" class="btn" id="create-button">CREAR DOCUMENTOS</button>
+        <button type="submit" class="btn btn-default" id="create-button">CREAR DOCUMENTOS</button>
     </form>
     <form id="export" action="/exportar_excel" method="post">
-        <button type="submit" class="btn" id="export-button">EXPORTAR A EXCEL</button>
+        <button type="submit" class="btn btn-default" id="export-button">EXPORTAR A EXCEL</button>
     </form>
     <form id="edit" action="/editar_clientes" method="post">
-        <button type="submit" class="btn" id="edit-button">EDITAR CLIENTES</button>
+        <button type="submit" class="btn btn-default" id="edit-button">EDITAR CLIENTES</button>
     </form>
     <form id="del" action="/borrar_clientes" method="post">
         <button type="submit" class="btn btn-danger" id="del-button">BORRAR CLIENTES</button>
     </form>
     </table>
+    {% else %}
+            <h4>No se han encontrado clientes</h4>
+    {% endif %}
   </div>
 
 {% endblock %}
