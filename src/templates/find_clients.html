@@ -85,7 +85,7 @@
 </div>
 <p>{{ result }}</p><!--
 <div class="jumbotron text-center busqueda">
-    {% if results|length > 0 %}
+    {% if result|length > 0 %}
     <table class="table table-striped table-sm">
         <tr>
             <td>Fecha de alta</td>
@@ -106,23 +106,10 @@
             <td>E-mail</td>
         </tr>
         {% for result in results %}
+        {% for res in result %}
         <tr>
-            <td>{{ result.fecha_alta }}</td>
-            <td>{{ result.cif }}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
-            <td>{{}}</td>
+            <td>{{ res.fecha_alta }}</td>
+            <td>{{ res.cif }}</td>
         </tr>
         {% endfor %}
     </table>
