@@ -52,5 +52,4 @@ class Cliente(object):
     def find_clients(self):
         json = self.json()
         filtrado = {key: value for key, value in json.items() if value != '' and key != "_id" and key !="fecha_alta"}
-        return filtrado
-        # return [client for client in Database.find(collection="clientes", query=filtrado)]
+        return [client for client in Database.find(collection="clientes", query=filtrado)]
