@@ -118,6 +118,7 @@
             <h4>No se han encontrado clientes</h4>
           {% endif %}
       </table>
+    <table>
     <form id="create_documents" action="/crear_documentos" method="post">
         <button type="submit" class="btn" id="create-button">CREAR DOCUMENTOS</button>
     </form>
@@ -130,7 +131,7 @@
     <form id="del" action="/borrar_clientes" method="post">
         <button type="submit" class="btn" id="del-button">BORRAR CLIENTES</button>
     </form>
-
+    </table>
   </div>
 
 {% endblock %}
