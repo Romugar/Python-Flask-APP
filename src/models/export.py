@@ -1,5 +1,4 @@
-import io
-from flask import send_file
+from http.client import HTTPResponse
 from openpyxl import Workbook
 
 
@@ -13,13 +12,16 @@ class Export(object):
 
 
     def export_to_excel(self):
-        wb = Workbook()
-        ws = wb.active  # worksheet
-        ws.title = "Excel Using Openpyxl"
-        c = ws.cell(row=5, column=5)
-        c.value = "Hi on 5,5"
-        out = io.StringIO()
-        wb.save(out)
-        out.seek(0)
+        output = HttpResponse(mimetype='application/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+        file_name = "Test.xlsx"
+        output['Content-Disposition'] = 'attachment; filename=' + file_name
 
-        return send_file(out, mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', attachment_filename='xxl.xlsx', as_attachment=True)
+        wb = Workbook()
+
+        ws = wb.worksheets[0]
+
+        ws.cell('A1').value = 3.14
+
+        wb.save(output)
+
+        return output
