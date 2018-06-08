@@ -95,7 +95,7 @@ def find_and_filter_clients():
         return render_template("login.html")
 
 
-@app.route("/exportar_excel/<string:result>", methods=["GET", "POST"])
+@app.route("/exportar_excel/<path:result>", methods=["GET", "POST"])
 def export_to_excel(result):
     if request.method == "GET":
 
