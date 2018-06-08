@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, session
 from src.common.database import Database
 from src.models.cliente import Cliente
+from src.models.export import Export
 from src.models.user import User
 
 __author__ = "roberto munoz garcia"
@@ -98,7 +99,8 @@ def find_and_filter_clients():
 @app.route("/exportar_excel/<path:result>", methods=["GET"])
 def export_to_excel(result):
     if request.method == "GET" and session["email"] is not None:
-
+        export = Export(result)
+        return export.export_to_excel()
         return render_template("find_clients.html", mensaje=result)
 
 if __name__ == "__main__":
