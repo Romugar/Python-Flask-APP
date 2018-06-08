@@ -87,7 +87,6 @@
     {% if result|length > 0 %}
     <table class="table table-striped table-sm">
         <tr>
-            <th>Seleccionar</th>
             <th>Fecha de alta</th>
             <th>C.I.F.</th>
             <th>Dirección</th>
@@ -107,7 +106,6 @@
         </tr>
         {% for res in result %}
         <tr class="texto_resultado">
-            <td><input type="checkbox" name="{{ res._id }}" value="{{ res._id }}"></td>
             <td>{{ res.fecha_alta }}</td>
             <td>{{ res.cif }}</td>
             <td>{{ res.direccion }}</td>
@@ -132,7 +130,7 @@
     <a href="">
         <button type="submit" class="btn btn-default float-left btn-a" id="create-button">CREAR DOCUMENTOS</button>
     </a>
-    <a href="">
+    <a href="/exportar_excel/{{ result }}">
         <button type="submit" class="btn btn-default float-left btn-a" id="export-button">EXPORTAR A EXCEL</button>
     </a>
     <a href="">
@@ -142,6 +140,7 @@
         <button type="submit" class="btn btn-danger float-right" id="del-button">BORRAR CLIENTES</button>
     </a>
 </div>
+<h4>{{ mensaje }}</h4>
 {% else %}
 <h4>No se han encontrado clientes</h4>
 {% endif %}
