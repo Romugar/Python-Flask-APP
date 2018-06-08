@@ -100,7 +100,7 @@ def find_and_filter_clients():
 def export_to_excel(result):
     if request.method == "GET" and session["email"] is not None:
         export = Export(result)
-        return export.export_to_excel()
+        export.export_to_excel()
         return render_template("find_clients.html", mensaje=result)
 
 if __name__ == "__main__":
