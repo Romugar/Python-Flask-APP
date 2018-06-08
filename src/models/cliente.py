@@ -50,4 +50,5 @@ class Cliente(object):
         }
 
     def filter_and_find(self):
-        return self.json()
+
+        return [a for a in self.json() if a is not None]
