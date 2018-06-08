@@ -53,4 +53,4 @@ class Cliente(object):
         json = self.json()
 
         # del json["_id", "fecha_alta"]
-        return {key: value for key, value in json.items() if value != '' and key != "_id"}
+        return {key: value for key, value in json.items() if value != '' and key != "_id" and key !="fecha_alta"}
