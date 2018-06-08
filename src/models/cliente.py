@@ -50,5 +50,6 @@ class Cliente(object):
         }
 
     def filter_and_find(self):
-        objeto = Cliente()
-        return objeto.__dict__
+        json = self.json()
+        del json["_id", "fecha_alta"]
+        return {key: value for key, value in json.items() if value != ''}
