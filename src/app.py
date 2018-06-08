@@ -95,11 +95,13 @@ def find_and_filter_clients():
         return render_template("login.html")
 
 
-@app.route("/exportar_excel/<string:result>", methods=["GET"])
+@app.route("/exportar_excel/<string:result>", methods=["GET", "POST"])
 def export_to_excel(result):
-    if request.method == "GET" and session["email"] is not None:
+    if request.method == "POST":
 
         return render_template("find_clients.html", mensaje=result)
+    elif request.method == "GET" and session["email"] is not None:
+        return render_template("home.html")
     else:
         return render_template("login.html")
 

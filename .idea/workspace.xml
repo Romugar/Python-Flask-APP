@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="671f13c8-c42d-47b4-b99b-0b197677a898" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/find_clients.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/find_clients.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +19,8 @@
           <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="618">
-                  <caret line="101" column="67" selection-start-line="101" selection-start-column="67" selection-end-line="101" selection-end-column="67" />
+                <state relative-caret-position="614">
+                  <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
                   <folding>
                     <element signature="e#0#58#0" expanded="true" />
                   </folding>
@@ -39,7 +40,7 @@
           <file leaf-file-name="cliente.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="726">
+                <state relative-caret-position="740">
                   <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
@@ -63,7 +64,7 @@
           <file leaf-file-name="add_client.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="672">
+                <state relative-caret-position="686">
                   <caret line="86" column="69" lean-forward="true" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="69" />
                 </state>
               </provider>
@@ -97,8 +98,8 @@
           <file leaf-file-name="find_clients.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="762">
-                  <caret line="146" column="14" lean-forward="true" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
+                <state relative-caret-position="636">
+                  <caret line="139" column="50" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -152,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/templates/login.html" />
         <option value="$PROJECT_DIR$/src/static/css/main.css" />
         <option value="$PROJECT_DIR$/src/models/cliente.py" />
-        <option value="$PROJECT_DIR$/src/templates/find_clients.html" />
         <option value="$PROJECT_DIR$/src/app.py" />
+        <option value="$PROJECT_DIR$/src/templates/find_clients.html" />
       </list>
     </option>
   </component>
@@ -639,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="86" column="69" lean-forward="true" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -655,7 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
+        <state relative-caret-position="740">
           <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -663,20 +657,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
+    <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="146" column="14" lean-forward="true" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="14" />
+        <state relative-caret-position="686">
+          <caret line="86" column="69" lean-forward="true" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="101" column="67" selection-start-line="101" selection-start-column="67" selection-end-line="101" selection-end-column="67" />
+        <state relative-caret-position="614">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="139" column="50" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
         </state>
       </provider>
     </entry>
