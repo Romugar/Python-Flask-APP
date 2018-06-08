@@ -97,7 +97,7 @@ def find_and_filter_clients():
 
 @app.route("/exportar_excel/<path:result>", methods=["GET", "POST"])
 def export_to_excel(result):
-    if request.method == "GET":
+    if request.method == "POST":
 
         return render_template("find_clients.html", mensaje=result)
     # elif request.method == "GET" and session["email"] is not None:
