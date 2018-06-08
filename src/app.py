@@ -66,5 +66,34 @@ def add_clients():
         return render_template("login.html")
 
 
+@app.route("/resultado_busqueda", methods=["GET", "POST"])
+def query():
+    if request.method == "POST":
+        cif = request.form["cif"]
+        direccion = request.form["direccion"]
+        poblacion = request.form["poblacion"]
+        cp = request.form["cp"]
+        provincia = request.form["provincia"]
+        parroquia_razon = request.form["parroquia_razon"]
+        diocesis = request.form["diocesis"]
+        arciprestazgo = request.form["arciprestazgo"]
+        web = request.form["web"]
+        responsable = request.form["responsable"]
+        cargo = request.form["cargo"]
+        dni = request.form["dni"]
+        tfno1 = request.form["tfno1"]
+        tfno2 = request.form["tfno2"]
+        email = request.form["email"]
+
+        query_clients = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
+        result = query_clients.filter_and_find()
+
+        return render_template("query.html", mensaje=result)
+    elif request.method == "GET" and session["email"] is not None:
+        return render_template("home.html")
+    else:
+        return render_template("login.html")
+
+
 if __name__ == "__main__":
     app.run(debug=app.config['DEBUG'], port=4990)

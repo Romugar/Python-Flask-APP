@@ -48,3 +48,6 @@ class Cliente(object):
             "tfno2": self.tfno2,
             "email": self.email,
         }
+
+    def filter_and_find(self):
+        return self.json()
