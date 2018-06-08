@@ -82,9 +82,7 @@
         </table>
         <button type="submit" class="btn btn-default" id="submit-button">BUSCAR</button>
     </form>
-    <p>{{ result }}</p>
 </div>
-
 <div class="jumbotron text-center busqueda">
     {% if result|length > 0 %}
     <table class="table table-striped table-sm">
@@ -110,8 +108,23 @@
         <tr>
             <td>{{ res.fecha_alta }}</td>
             <td>{{ res.cif }}</td>
+            <td>{{ res.direccion }}</td>
+            <td>{{ res.poblacion }}</td>
+            <td>{{ res.cp }}</td>
+            <td>{{ res.provincia }}</td>
+            <td>{{ res.parroquia_razon }}</td>
+            <td>{{ res.diocesis }}</td>
+            <td>{{ res.arciprestazgo }}</td>
+            <td>{{ res.web }}</td>
+            <td>{{ res.responsable }}</td>
+            <td>{{ res.cargo }}</td>
+            <td>{{ res.dni }}</td>
+            <td>{{ res.tfno1 }}</td>
+            <td>{{ res.tfno2 }}</td>
+            <td>{{ res.email }}</td>
         </tr>
         {% endfor %}
+    </table>
     <div>
         <form id="create_documents" action="/crear_documentos" method="post">
             <button type="submit" class="btn btn-default float-left btn-a" id="create-button">CREAR DOCUMENTOS</button>
@@ -126,8 +139,6 @@
             <button type="submit" class="btn btn-danger float-right" id="del-button">BORRAR CLIENTES</button>
         </form>
     </div>
-    </table>
-
     {% else %}
     <h4>No se han encontrado clientes</h4>
     {% endif %}
