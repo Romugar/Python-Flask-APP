@@ -50,5 +50,5 @@ class Cliente(object):
         }
 
     def filter_and_find(self):
-
-        return Cliente.__dict__
+        objeto = Cliente()
+        return objeto.__dict__
