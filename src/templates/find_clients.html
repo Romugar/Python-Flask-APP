@@ -129,7 +129,6 @@
     </table>
     {% else %}
     <h4>No se han encontrado clientes</h4>
-    {% endif %}
 </div>
 <div class="container">
     <form id="create_documents" action="/crear_documentos" method="post">
@@ -145,4 +144,5 @@
         <button type="submit" class="btn btn-danger float-right" id="del-button">BORRAR CLIENTES</button>
     </form>
 </div>
+{% endif %}
 {% endblock %}
