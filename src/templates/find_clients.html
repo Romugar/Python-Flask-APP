@@ -86,7 +86,7 @@
 <div class="jumbotron text-center busqueda">
     {% if result|length > 0 %}
     <table class="table table-striped table-sm">
-        <tr>
+        <tr><strong>
             <td>Fecha de alta</td>
             <td>C.I.F.</td>
             <td>Dirección</td>
@@ -103,7 +103,7 @@
             <td>Tfno 1</td>
             <td>Tfno 2</td>
             <td>E-mail</td>
-        </tr>
+        </strong></tr>
         {% for res in result %}
         <tr>
             <td>{{ res.fecha_alta }}</td>
