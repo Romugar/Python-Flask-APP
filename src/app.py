@@ -88,7 +88,7 @@ def query():
         query_clients = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
         result = query_clients.find_clients()
 
-        return render_template("find_clients.html", mensaje=result)
+        return render_template("find_clients.html", result=result)
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
     else:
