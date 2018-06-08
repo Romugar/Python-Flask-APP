@@ -67,7 +67,7 @@ def add_clients():
 
 
 @app.route("/resultado_busqueda", methods=["GET", "POST"])
-def query():
+def find_clients():
     if request.method == "POST":
         cif = request.form["cif"]
         direccion = request.form["direccion"]
@@ -86,9 +86,9 @@ def query():
         email = request.form["email"]
 
         query_clients = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
-        results = query_clients.find_clients()
+        result = query_clients.find_clients()
 
-        return render_template("find_clients.html", results=results)
+        return render_template("find_clients.html", result=result)
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
     else:
