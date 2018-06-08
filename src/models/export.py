@@ -1,4 +1,4 @@
-from io import StringIO
+import io
 from flask import send_file
 from openpyxl import Workbook
 
@@ -18,7 +18,7 @@ class Export(object):
         ws.title = "Excel Using Openpyxl"
         c = ws.cell(row=5, column=5)
         c.value = "Hi on 5,5"
-        out = StringIO.StringIO()
+        out = io.StringIO()
         wb.save(out)
         out.seek(0)
 
