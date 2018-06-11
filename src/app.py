@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, session
 from src.common.database import Database
 from src.models.cliente import Cliente
 from src.models.user import User
-import json
 
 __author__ = "roberto munoz garcia"
 
