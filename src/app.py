@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, session
 from src.common.database import Database
 from src.models.cliente import Cliente
 from src.models.user import User
+import json
 
 __author__ = "roberto munoz garcia"
 
@@ -87,7 +88,6 @@ def find_and_filter_clients():
 
         query_clients = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
         result = query_clients.find_clients()
-        a = type(result)
 
         return render_template("find_clients.html", result=result, a=a)
     elif request.method == "GET" and session["email"] is not None:
@@ -99,8 +99,8 @@ def find_and_filter_clients():
 @app.route("/editar_clientes/<path:result>", methods=["GET", "POST"])
 def edit_clients(result):
     if request.method == "GET" and session["email"] is not None:
-        # convert_to_dict = {k:v for k,v in (x.split(':') for x in result)}
-        a = type(result)
+        data = json.loads(result)
+        a = type(data)
         return render_template("edit_clients.html", result=a)
     else:
         return render_template("login.html")
