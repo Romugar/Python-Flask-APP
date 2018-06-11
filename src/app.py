@@ -106,7 +106,7 @@ def edit_clients(result):
 @app.route("/guardar_edicion", methods=["GET", "POST"])
 def save_edition():
     if request.method == "POST":
-        dat = request.data
+        dat = request.form
         return render_template("edit_clients.html", mensaje=dat)
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
