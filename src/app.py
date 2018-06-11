@@ -99,7 +99,8 @@ def find_and_filter_clients():
 def edit_clients(result):
     if request.method == "GET" and session["email"] is not None:
         # convert_to_dict = {k:v for k,v in (x.split(':') for x in result)}
-        return render_template("edit_clients.html", result=result)
+        a = type(result)
+        return render_template("edit_clients.html", result=a)
     else:
         return render_template("login.html")
 
