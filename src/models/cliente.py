@@ -56,4 +56,7 @@ class Cliente(object):
 
     def update_clients(self):
         json = self.json()
-        return json
+        for i in range(len(json["_id"])):
+            id = {key: value[i] for key, value in json.items() if key == "_id"}
+            filtrado = {key: value[i] for key, value in json.items() if key != "_id" and key != "fecha_alta"}
+            Database.update(id, {"$set": filtrado})
