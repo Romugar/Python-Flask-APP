@@ -2,7 +2,7 @@
 {% block content %}
 <div class="jumbotron text-center busqueda">
     <h4 style="color:green;">{{ mensaje }}</h4>
-    <form id="edit_clients" action="/editar_clientes" method="post">
+    <form id="edit_clients" action="/guardar_edicion" method="post">
         {% for dato in data %}
         <div>
         <table class="table table-striped table-sm">
