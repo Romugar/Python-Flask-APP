@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron text-center busqueda">
-    <form id="find_and_filter_clients" action="/resultado_busqueda" method="post">
+    <form id="edit_clients" action="" method="post">
+        {% for res in result %}
         <table class="table table-striped table-sm">
             <tr>
                 <td>C.I.F.</td>
@@ -12,7 +13,7 @@
             </tr>
             <tr>
                 <td>
-                    <input type="text" id="cif" class="form-control form-control-sm" name="cif" />
+                    <input type="text" id="cif" class="form-control form-control-sm" name="cif" value="{{ res.cif }}"/>
                 </td>
                 <td>
                     <input type="text" id="direccion" class="form-control form-control-sm" name="direccion" />
@@ -80,68 +81,9 @@
                 </td>
             </tr>
         </table>
-        <button type="submit" class="btn btn-default" id="submit-button">BUSCAR</button>
+        {% endfor %}
+        <button type="submit" class="btn btn-default" id="submit-button">GUARDAR</button>
     </form>
 </div>
-<div class="jumbotron text-center busqueda">
-    {% if result|length > 0 %}
-    <table class="table table-striped table-sm">
-        <tr>
-            <th>Fecha de alta</th>
-            <th>C.I.F.</th>
-            <th>Dirección</th>
-            <th>Población</th>
-            <th>C.P.</th>
-            <th>Provincia</th>
-            <th>Parroquia / Razón</th>
-            <th>Diócesis</th>
-            <th>Arciprestazgo</th>
-            <th>Web</th>
-            <th>Responsable</th>
-            <th>Cargo</th>
-            <th>D.N.I.</th>
-            <th>Tfno 1</th>
-            <th>Tfno 2</th>
-            <th>E-mail</th>
-        </tr>
-        {% for res in result %}
-        <tr class="texto_resultado">
-            <td>{{ res.fecha_alta }}</td>
-            <td>{{ res.cif }}</td>
-            <td>{{ res.direccion }}</td>
-            <td>{{ res.poblacion }}</td>
-            <td>{{ res.cp }}</td>
-            <td>{{ res.provincia }}</td>
-            <td>{{ res.parroquia_razon }}</td>
-            <td>{{ res.diocesis }}</td>
-            <td>{{ res.arciprestazgo }}</td>
-            <td>{{ res.web }}</td>
-            <td>{{ res.responsable }}</td>
-            <td>{{ res.cargo }}</td>
-            <td>{{ res.dni }}</td>
-            <td>{{ res.tfno1 }}</td>
-            <td>{{ res.tfno2 }}</td>
-            <td>{{ res.email }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-</div>
-<div class="container">
-    <a href="">
-        <button class="btn btn-default float-left btn-a">CREAR DOCUMENTOS</button>
-    </a>
-    <a href="/exportar_excel/{{ result }}">
-        <button class="btn btn-default float-left btn-a">EXPORTAR A EXCEL</button>
-    </a>
-    <a href="/editar_clientes/{{ result }}">
-        <button class="btn btn-default float-left">EDITAR CLIENTES</button>
-    </a>
-    <a href="">
-        <button class="btn btn-danger float-right">BORRAR CLIENTES</button>
-    </a>
-</div>
-{% else %}
-<h4>No se han encontrado clientes</h4>
-<h4>{{ mensaje }}</h4>
-{% endif %}
+</table>
 {% endblock %}

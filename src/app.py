@@ -102,6 +102,17 @@ def export_to_excel(result):
         export = Export(result)
         export.export_to_excel()
         return render_template("find_clients.html", mensaje=result)
+    else:
+        return render_template("login.html")
+
+
+@app.route("/editar_clientes/<path:result>", methods=["GET"])
+def export_to_excel(result):
+    if request.method == "GET" and session["email"] is not None:
+        return render_template("edit_clients.html", mensaje=result)
+    else:
+        return render_template("login.html")
+
 
 if __name__ == "__main__":
     app.run(debug=app.config['DEBUG'], port=4990)

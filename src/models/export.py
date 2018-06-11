@@ -23,4 +23,4 @@ class Export(object):
         filename = "Prueba.xlsx"
         wb.save(filename)
 
-        # return send_file(out, mimetype='rgpd-app/vnd.openxmlformats-officedocument.spreadsheetml.sheet', attachment_filename='xxl.xlsx', as_attachment=True)
+        return send_file(out, mimetype='rgpd-app/vnd.openxmlformats-officedocument.spreadsheetml.sheet', attachment_filename='Prueba.xlsx', as_attachment=True)
