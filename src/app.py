@@ -95,10 +95,13 @@ def find_and_filter_clients():
         return render_template("login.html")
 
 
-@app.route("/editar_clientes/<path:result>", methods=["GET"])
+@app.route("/editar_clientes", methods=["GET", "POST"])
 def edit_clients(result):
-    if request.method == "GET" and session["email"] is not None:
-        return render_template("edit_clients.html", result=result)
+    if request.method == "POST":
+        json = request.get_json()
+        return render_template("edit_clients.html", result=json)
+    elif request.method == "GET" and session["email"] is not None:
+        return render_template("home.html")
     else:
         return render_template("login.html")
 
