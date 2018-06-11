@@ -95,13 +95,11 @@ def find_and_filter_clients():
         return render_template("login.html")
 
 
-@app.route("/editar_clientes", methods=["GET", "POST"])
+@app.route("/editar_clientes/<path:result>", methods=["GET", "POST"])
 def edit_clients(result):
-    if request.method == "POST":
-        json = request.get_json()
-        return render_template("edit_clients.html", result=json)
-    elif request.method == "GET" and session["email"] is not None:
-        return render_template("home.html")
+    if request.method == "GET" and session["email"] is not None:
+        convert_to_dict = {k:v for k,v in (x.split(':') for x in result)}
+        return render_template("edit_clients.html", result=convert_to_dict)
     else:
         return render_template("login.html")
 
