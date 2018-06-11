@@ -124,7 +124,7 @@ def save_edition():
         tfno2 = request.form.getlist["tfno2"]
         email = request.form.getlist["email"]
 
-        clients_to_edit = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
+        clients_to_edit = Cliente(_id, fecha_alta, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
                                 responsable, cargo, dni, tfno1, tfno2, email)
         result = clients_to_edit.update_clients()
 
