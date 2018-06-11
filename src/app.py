@@ -69,7 +69,6 @@ def add_clients():
 @app.route("/resultado_busqueda", methods=["GET", "POST"])
 def find_and_filter_clients():
     if request.method == "POST":
-        return render_template("find_clients.html")
         cif = request.form["cif"]
         direccion = request.form["direccion"]
         poblacion = request.form["poblacion"]
