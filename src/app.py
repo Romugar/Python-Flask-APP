@@ -102,7 +102,7 @@ def edit_clients(result):
         return render_template("edit_clients.html", data=data)
     elif request.method == "POST":
         pass
-    return render_template("edit_clients.html", mensaje="Los datos han sido guardados")
+        return render_template("edit_clients.html", mensaje="Los datos han sido guardados")
     else:
         return render_template("login.html")
 
