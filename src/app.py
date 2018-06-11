@@ -108,21 +108,21 @@ def save_edition():
     if request.method == "POST":
         _id = request.form.getlist("_id")
         fecha_alta = request.form.getlist("fecha_alta")
-        cif = request.form.getlist["cif"]
-        direccion = request.form.getlist["direccion"]
-        poblacion = request.form.getlist["poblacion"]
-        cp = request.form.getlist["cp"]
-        provincia = request.form.getlist["provincia"]
-        parroquia_razon = request.form.getlist["parroquia_razon"]
-        diocesis = request.form.getlist["diocesis"]
-        arciprestazgo = request.form.getlist["arciprestazgo"]
-        web = request.form.getlist["web"]
-        responsable = request.form.getlist["responsable"]
-        cargo = request.form.getlist["cargo"]
-        dni = request.form.getlist["dni"]
-        tfno1 = request.form.getlist["tfno1"]
-        tfno2 = request.form.getlist["tfno2"]
-        email = request.form.getlist["email"]
+        cif = request.form.getlist("cif")
+        direccion = request.form.getlist("direccion")
+        poblacion = request.form.getlist("poblacion")
+        cp = request.form.getlist("cp")
+        provincia = request.form.getlist("provincia")
+        parroquia_razon = request.form.getlist("parroquia_razon")
+        diocesis = request.form.getlist("diocesis")
+        arciprestazgo = request.form.getlist("arciprestazgo")
+        web = request.form.getlist("web")
+        responsable = request.form.getlist("responsable")
+        cargo = request.form.getlist("cargo")
+        dni = request.form.getlist("dni")
+        tfno1 = request.form.getlist("tfno1")
+        tfno2 = request.form.getlist("tfno2")
+        email = request.form.getlist("email")
 
         clients_to_edit = Cliente(_id, fecha_alta, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
                                 responsable, cargo, dni, tfno1, tfno2, email)
