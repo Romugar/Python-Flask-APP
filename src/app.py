@@ -98,7 +98,7 @@ def find_and_filter_clients():
 @app.route("/editar_clientes/<path:result>", methods=["GET"])
 def edit_clients(result):
     if request.method == "GET" and session["email"] is not None:
-        return render_template("edit_clients.html", mensaje=result)
+        return render_template("edit_clients.html", result=result)
     else:
         return render_template("login.html")
 
