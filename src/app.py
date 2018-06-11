@@ -96,7 +96,7 @@ def find_and_filter_clients():
 
 
 @app.route("/editar_clientes/<path:result>", methods=["GET"])
-def export_to_excel(result):
+def edit_clients(result):
     if request.method == "GET" and session["email"] is not None:
         return render_template("edit_clients.html", mensaje=result)
     else:
