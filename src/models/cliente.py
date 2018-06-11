@@ -60,4 +60,4 @@ class Cliente(object):
             id = {key: value[i] for key, value in json.items() if key == "_id"}
             filtrado = {key: value[i] for key, value in json.items() if key != "_id" and key != "fecha_alta"}
             query = {'$set': filtrado}
-            Database.update(id, query)
+            Database.update(collection="clientes", id=id, query=query)
