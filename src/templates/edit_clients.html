@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-{{ result }}
+
 <div class="jumbotron text-center busqueda">
     <form id="edit_clients" action="" method="post">
 
@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td>
-                    <input type="text" id="cif" class="form-control form-control-sm" name="cif" value="{{ res.cif }}"/>
+                    <input type="text" id="cif" class="form-control form-control-sm" name="cif" value=""/>
                 </td>
                 <td>
                     <input type="text" id="direccion" class="form-control form-control-sm" name="direccion" />
@@ -82,7 +82,7 @@
                 </td>
             </tr>
         </table>
-        
+
         <button type="submit" class="btn btn-default" id="submit-button">GUARDAR</button>
     </form>
 </div>
