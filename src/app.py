@@ -128,7 +128,7 @@ def save_edition():
                                 responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
         result = clients_to_edit.update_clients()
 
-        return render_template("edit_clients.html", mensaje=result)
+        return render_template("home.html", resultado="Edición guardada con éxito")
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
     else:
