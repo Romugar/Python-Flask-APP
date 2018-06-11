@@ -108,7 +108,9 @@ def save_edition():
     if request.method == "POST":
 
         dat = request.form.getlist("_id")
-        return render_template("edit_clients.html", mensaje=dat)
+        a = len(dat)
+
+        return render_template("edit_clients.html", mensaje=dat, a=a)
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
     else:

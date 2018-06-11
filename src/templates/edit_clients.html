@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron text-center busqueda">
-    <h4 style="color:green;">{{ mensaje }}</h4>
+    <h4 style="color:green;">{{ mensaje }}{{ a }}</h4>
     <form id="edit_clients" action="/guardar_edicion" method="post">
         {% for dato in data %}
         <div>
