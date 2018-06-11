@@ -100,6 +100,9 @@ def edit_clients(result):
     if request.method == "GET" and session["email"] is not None:
         data = eval(result)
         return render_template("edit_clients.html", data=data)
+    elif request.method == "POST":
+        pass
+    return render_template("edit_clients.html", mensaje="Los datos han sido guardados")
     else:
         return render_template("login.html")
 
