@@ -100,8 +100,7 @@ def find_and_filter_clients():
 def edit_clients(result):
     if request.method == "GET" and session["email"] is not None:
         data = eval(result)
-        a = type(data)
-        return render_template("edit_clients.html", result=a)
+        return render_template("edit_clients.html", data=data)
     else:
         return render_template("login.html")
 

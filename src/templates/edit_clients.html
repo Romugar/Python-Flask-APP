@@ -3,7 +3,7 @@
 {{ result }}
 <div class="jumbotron text-center busqueda">
     <form id="edit_clients" action="" method="post">
-
+        {% for dato in data %}
         <div>
         <table class="table table-striped table-sm">
             <tr>
@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>
-                    <input type="text" id="cif" class="form-control form-control-sm" name="cif" value="hola"/>
+                    <input type="text" id="cif" class="form-control form-control-sm" name="cif" value="{{ dato.cif }}"/>
                 </td>
                 <td>
                     <input type="text" id="direccion" class="form-control form-control-sm" name="direccion" />
@@ -84,7 +84,7 @@
             </tr>
         </table>
         </div>
-
+        {% endfor %}
         <button type="submit" class="btn btn-default" id="submit-button">GUARDAR</button>
     </form>
 </div>
