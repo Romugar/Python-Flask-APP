@@ -167,7 +167,7 @@ def confirm_remove():
                                 responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
         clients_to_edit.remove_client()
 
-        return render_template("home.html", resultado="Edición guardada con éxito")
+        return render_template("home.html", resultado="Los datos han sido borrados")
     elif request.method == "GET" and session["email"] is not None:
         return render_template("home.html")
     else:
