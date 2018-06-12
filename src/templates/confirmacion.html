@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
+<input type="hidden" id="_id" class="form-control form-control-sm" name="_id" value="{{ dato._id }}"/>
+<input type="hidden" id="fecha_alta" class="form-control form-control-sm" name="fecha_alta" value="{{ dato.fecha_alta }}"/>
+<input type="hidden" id="cif" class="form-control form-control-sm" name="cif" value="{{ dato.cif }}"/>
+<input type="hidden" id="direccion" class="form-control form-control-sm" name="direccion" value="{{ dato.direccion }}"/>
+<input type="hidden" id="poblacion" class="form-control form-control-sm" name="poblacion" value="{{ dato.poblacion }}"/>
+<input type="hidden" id="cp" class="form-control form-control-sm" name="cp" value="{{ dato.cp }}"/>
+<input type="hidden" id="provincia" class="form-control form-control-sm" name="provincia" value="{{ dato.provincia }}"/>
+<input type="hidden" id="parroquia_razon" class="form-control form-control-sm" name="parroquia_razon" value="{{ dato.parroquia_razon }}"/>
+<input type="hidden" id="diocesis" class="form-control form-control-sm" name="diocesis" value="{{ dato.diocesis }}"/>
+<input type="hidden" id="arciprestazgo" class="form-control form-control-sm" name="arciprestazgo" value="{{ dato.arciprestazgo }}"/>
+<input type="hidden" id="web" class="form-control form-control-sm" name="web" value="{{ dato.web }}"/>
+<input type="hidden" id="responsable" class="form-control form-control-sm" name="responsable" value="{{ dato.responsable }}"/>
+<input type="hidden" id="cargo" class="form-control form-control-sm" name="cargo" value="{{ dato.cargo }}"/>
+<input type="hidden" id="dni" class="form-control form-control-sm" name="dni" value="{{ dato.dni }}"/>
+<input type="hidden" id="tfno1" class="form-control form-control-sm" name="tfno1" value="{{ dato.tfno1 }}"/>
+<input type="hidden" id="tfno2" class="form-control form-control-sm" name="tfno2" value="{{ dato.tfno2 }}"/>
+<input type="hidden" id="email" class="form-control form-control-sm" name="email" value="{{ dato.email }}"/>
 
 <form class="form-signin" id="login-form" action="/confirmar_borrado" method="post">
     <h1 class="h3 mb-3 font-weight-normal">¿Seguro?</h1>

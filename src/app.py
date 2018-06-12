@@ -163,9 +163,9 @@ def confirm_remove():
         tfno2 = request.form.getlist("tfno2")
         email = request.form.getlist("email")
 
-        clients_to_edit = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
+        clients_to_remove = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
                                 responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
-        clients_to_edit.remove_client()
+        clients_to_remove.remove_client()
 
         return render_template("home.html", resultado="Los datos han sido borrados")
     elif request.method == "GET" and session["email"] is not None:
