@@ -61,3 +61,6 @@ class Cliente(object):
             filtrado = {key: value[i] for key, value in json.items() if key != "_id" and key != "fecha_alta"}
             query = {'$set': filtrado}
             Database.update(collection="clientes", id=id, query=query)
+
+    def remove_client(self):
+        json = self.json()

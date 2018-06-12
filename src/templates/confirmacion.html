@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="form" id="login-form" action="/confirmar_borrado" method="post">
+    <h2 class="h3 mb-3 font-weight-normal">¿Seguro que quieres borrar?</h2>
+    <h2 class="h3 mb-3 font-weight-normal">Los datos borrados no podran ser recuperados</h2>
+    <button type="submit" class="btn btn-default" id="submit-button">Sí</button>
+    <button type="submit" class="btn btn-default" id="volver">No</button>
+</form>
+
+{% endblock %}

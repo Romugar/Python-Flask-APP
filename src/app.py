@@ -126,7 +126,46 @@ def save_edition():
 
         clients_to_edit = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
                                 responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
-        result = clients_to_edit.update_clients()
+        clients_to_edit.update_clients()
+
+        return render_template("home.html", resultado="Edición guardada con éxito")
+    elif request.method == "GET" and session["email"] is not None:
+        return render_template("home.html")
+    else:
+        return render_template("login.html")
+
+@app.route("/borrar_clientes/<path:result>", methods=["GET", "POST"])
+def remove_clients(result):
+    if request.method == "GET" and session["email"] is not None:
+        data = eval(result)
+        return render_template("confirmacion.html", data=data)
+    else:
+        return render_template("login.html")
+
+@app.route("/confirmar_borrado", methods=["GET", "POST"])
+def confirm_remove():
+    if request.method == "POST":
+        _id = request.form.getlist("_id")
+        fecha_alta = request.form.getlist("fecha_alta")
+        cif = request.form.getlist("cif")
+        direccion = request.form.getlist("direccion")
+        poblacion = request.form.getlist("poblacion")
+        cp = request.form.getlist("cp")
+        provincia = request.form.getlist("provincia")
+        parroquia_razon = request.form.getlist("parroquia_razon")
+        diocesis = request.form.getlist("diocesis")
+        arciprestazgo = request.form.getlist("arciprestazgo")
+        web = request.form.getlist("web")
+        responsable = request.form.getlist("responsable")
+        cargo = request.form.getlist("cargo")
+        dni = request.form.getlist("dni")
+        tfno1 = request.form.getlist("tfno1")
+        tfno2 = request.form.getlist("tfno2")
+        email = request.form.getlist("email")
+
+        clients_to_edit = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
+                                responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
+        clients_to_edit.remove_client()
 
         return render_template("home.html", resultado="Edición guardada con éxito")
     elif request.method == "GET" and session["email"] is not None:
