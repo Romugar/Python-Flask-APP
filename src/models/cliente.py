@@ -64,3 +64,6 @@ class Cliente(object):
 
     def remove_client(self):
         json = self.json()
+        for i in range(len(json["_id"])):
+            id = {key: value[i] for key, value in json.items() if key == "_id"}
+            Database.remove(collection="clientes", query=id)
