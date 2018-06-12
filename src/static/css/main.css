@@ -4,6 +4,12 @@ html, body {
 body {
   background-color: #f5f5f5;
 }
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
 .text-center {
   text-align: center!important;
 }
