@@ -49,6 +49,9 @@ body {
 .btn-a {
   margin-right : 15px;
 }
+.btn-default:hover{
+  background-color: #8946c8;
+}
 .texto_resultado {
   font-size: small;
 }
