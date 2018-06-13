@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="671f13c8-c42d-47b4-b99b-0b197677a898" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/export.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/js/export.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/find_clients.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/find_clients.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +53,8 @@
           <file leaf-file-name="find_clients.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="744">
-                  <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
+                <state relative-caret-position="546">
+                  <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -61,11 +63,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="763">
-                  <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+                  <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -97,13 +99,13 @@
           <file leaf-file-name="export.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/static/js/export.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                <state relative-caret-position="126">
+                  <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="add_client.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="add_client.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="630">
@@ -159,9 +161,9 @@
         <option value="$PROJECT_DIR$/src/app.py" />
         <option value="$PROJECT_DIR$/src/templates/confirmacion.html" />
         <option value="$PROJECT_DIR$/src/templates/base.html" />
-        <option value="$PROJECT_DIR$/src/templates/find_clients.html" />
-        <option value="$PROJECT_DIR$/src/static/js/export.js" />
         <option value="$PROJECT_DIR$/src/static/css/main.css" />
+        <option value="$PROJECT_DIR$/src/static/js/export.js" />
+        <option value="$PROJECT_DIR$/src/templates/find_clients.html" />
       </list>
     </option>
   </component>
@@ -612,16 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -659,6 +651,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/js/export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/cliente.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -671,22 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/js/export.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state relative-caret-position="546">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
         </state>
       </provider>
     </entry>
