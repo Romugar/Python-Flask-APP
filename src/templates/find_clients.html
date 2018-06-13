@@ -121,8 +121,8 @@
             <th>E-mail</th>
         </tr>
         </thead>
-        {% for res in result %}
         <tbody>
+        {% for res in result %}
         <tr class="texto_resultado">
             <td>{{ res.fecha_alta }}</td>
             <td>{{ res.cif }}</td>
@@ -141,8 +141,8 @@
             <td>{{ res.tfno2 }}</td>
             <td>{{ res.email }}</td>
         </tr>
-        </tbody>
         {% endfor %}
+        </tbody>
     </table>
 </div>
 {% else %}
