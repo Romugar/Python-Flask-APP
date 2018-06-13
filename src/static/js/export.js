@@ -1,5 +1,5 @@
     $(document).ready(function() {
-    $('#resultado_busqueda').DataTable( {
+    $('#exportar_tabla').DataTable( {
         dom: 'Bfrtip',
         paging: false,
         "searching": false,
