@@ -1,5 +1,3 @@
-TableExport.prototype.buttonContent = ["EXPORTAR A EXCEL"]
-
 new TableExport(document.getElementById("exportar_tabla"), {
     headers: true,                              // (Boolean), display table headers (th or td elements) in the <thead>, (default: true)
     footers: false,                              // (Boolean), display table footers (th or td elements) in the <tfoot>, (default: false)
