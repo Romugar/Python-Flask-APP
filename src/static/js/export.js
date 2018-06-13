@@ -1,3 +1,5 @@
+TableExport.prototype.buttonContent = ["EXPORTAR A EXCEL"]
+
 new TableExport(document.getElementById("exportar_tabla"), {
     headers: true,                              // (Boolean), display table headers (th or td elements) in the <thead>, (default: true)
     footers: false,                              // (Boolean), display table footers (th or td elements) in the <tfoot>, (default: false)
@@ -10,5 +12,3 @@ new TableExport(document.getElementById("exportar_tabla"), {
     ignoreCols: null,                           // (Number, Number[]), column indices to exclude from the exported file(s) (default: null)
     trimWhitespace: false                        // (Boolean), remove all leading/trailing newlines, spaces, and tabs from cell text in the exported file(s) (default: false)
 });
-
-document.getElementByClassName("btn-toolbar").value="EXPORTAR A EXCEL";
