@@ -52,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="438">
-                  <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+                  <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -686,7 +686,7 @@
     <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
-          <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+          <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
         </state>
       </provider>
     </entry>
