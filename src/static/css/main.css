@@ -55,11 +55,3 @@ body {
 .texto_resultado {
   font-size: small;
 }
-.btn-secondary {
-  background-color: #AC58FA;
-  color: white;
-  border: none;
-}
-.btn-secondary:hover{
-  background-color: #8946c8;
-}
