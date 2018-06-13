@@ -6,7 +6,7 @@
         "info": false,
         buttons: [
             {
-                extend: 'excelHtml5',
+                extend: 'excel',
                 text: 'EXPORTAR A EXCEL'
             }
         ]
