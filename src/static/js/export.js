@@ -11,5 +11,4 @@ new TableExport(document.getElementById("exportar_tabla"), {
     trimWhitespace: false                        // (Boolean), remove all leading/trailing newlines, spaces, and tabs from cell text in the exported file(s) (default: false)
 });
 
-var boton = document.getElementsByClassName("xlsx");
-boton.innerHTML = "EXPORTAR A EXCEL";
+document.getElementByClassName("xlsx").value="EXPORTAR A EXCEL";
