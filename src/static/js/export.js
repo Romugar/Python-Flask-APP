@@ -6,8 +6,8 @@
         "info": false,
         buttons: [
             {
-                extends: "excelHtml5",
-                text: "EXPORTAR A EXCEL"
+                extends: 'excelHtml5',
+                text: 'EXPORTAR A EXCEL'
             }
         ]
     } );
