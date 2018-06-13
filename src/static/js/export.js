@@ -5,7 +5,10 @@
         "searching": false,
         "info": false,
         buttons: [
-            'excelHtml5'
+            {
+                extends: "excelHtml5",
+                text: "EXPORTAR A EXCEL"
+            }
         ]
     } );
 } );
