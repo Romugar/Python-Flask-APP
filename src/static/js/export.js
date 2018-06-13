@@ -8,5 +8,5 @@ new TableExport(document.getElementById("exportar_tabla"), {
     position: 'top',                         // (top, bottom), position of the caption element relative to table, (default: 'bottom')
     ignoreRows: null,                           // (Number, Number[]), row indices to exclude from the exported file(s) (default: null)
     ignoreCols: null,                           // (Number, Number[]), column indices to exclude from the exported file(s) (default: null)
-    trimWhitespace: true                        // (Boolean), remove all leading/trailing newlines, spaces, and tabs from cell text in the exported file(s) (default: false)
+    trimWhitespace: false                        // (Boolean), remove all leading/trailing newlines, spaces, and tabs from cell text in the exported file(s) (default: false)
 });
