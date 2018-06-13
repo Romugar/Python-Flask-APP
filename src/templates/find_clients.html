@@ -100,7 +100,7 @@
 </div>
 
 <div class="jumbotron text-center busqueda">
-    <table class="table table-striped table-sm">
+    <table id="resultado_busqueda" class="table table-striped table-sm">
         <thead>
         <tr>
             <th>Fecha de alta</th>
@@ -145,6 +145,19 @@
         {% endfor %}
     </table>
 </div>
+<script>
+    $(document).ready(function() {
+    $('#resultado_busqueda').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ]
+    } );
+} );
+</script>
 {% else %}
 <h4>No se han encontrado clientes</h4>
 {% endif %}
