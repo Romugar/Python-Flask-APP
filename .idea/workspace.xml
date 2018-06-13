@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="671f13c8-c42d-47b4-b99b-0b197677a898" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/find_clients.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/find_clients.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,11 +51,8 @@
           <file leaf-file-name="find_clients.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
-                  <folding>
-                    <element signature="n#style#0;n#table#0;n#div#2;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="438">
+                  <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -65,10 +61,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
+                <state relative-caret-position="61">
                   <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
                 </state>
               </provider>
@@ -107,11 +103,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="add_client.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="add_client.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
-                  <caret line="31" column="48" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="48" />
+                <state relative-caret-position="630">
+                  <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
                   <folding>
                     <element signature="n#style#0;n#h4#0;n#!!top" expanded="true" />
                   </folding>
@@ -598,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/confirmacion.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -679,21 +668,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/add_client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="630">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/find_clients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="438">
+          <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
         </state>
       </provider>
     </entry>
