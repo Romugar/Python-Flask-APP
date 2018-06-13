@@ -85,9 +85,7 @@
 </div>
 {% if result|length > 0 %}
 <div class="jumbotron">
-    <a href="">
-        <button class="btn btn-default float-left btn-a">CREAR DOCUMENTOS</button>
-    </a>
+
     <a href="/editar_clientes/{{ result }}">
         <button class="btn btn-default float-left">EDITAR CLIENTES</button>
     </a>
@@ -97,6 +95,9 @@
 </div>
 
 <div id="exportar_tabla" class="jumbotron text-center busqueda">
+    <a href="">
+        <button class="btn btn-default float-left btn-a">CREAR DOCUMENTOS</button>
+    </a>
     <table class="display nowrap table-striped table-sm">
         <thead>
         <tr>
