@@ -101,6 +101,7 @@
 
 <div class="jumbotron text-center busqueda">
     <table class="table table-striped table-sm">
+        <thead>
         <tr>
             <th>Fecha de alta</th>
             <th>C.I.F.</th>
@@ -119,7 +120,9 @@
             <th>Tfno 2</th>
             <th>E-mail</th>
         </tr>
+        </thead>
         {% for res in result %}
+        <tbody>
         <tr class="texto_resultado">
             <td>{{ res.fecha_alta }}</td>
             <td>{{ res.cif }}</td>
@@ -138,6 +141,7 @@
             <td>{{ res.tfno2 }}</td>
             <td>{{ res.email }}</td>
         </tr>
+        </tbody>
         {% endfor %}
     </table>
 </div>
