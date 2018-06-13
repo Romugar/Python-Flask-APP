@@ -52,7 +52,7 @@ body {
 .texto_resultado {
   font-size: small;
 }
-btn-secondary {
+.btn-secondary {
   margin-right : 15px;
   background-color: #AC58FA;
   color: white;
