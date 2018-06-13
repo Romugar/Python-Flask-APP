@@ -1,4 +1,4 @@
-new TableExport(document.getElementsById("exportar_tabla")), {
+new TableExport(document.getElementsById("exportar_tabla"), {
     headers: true,                              // (Boolean), display table headers (th or td elements) in the <thead>, (default: true)
     footers: false,                              // (Boolean), display table footers (th or td elements) in the <tfoot>, (default: false)
     formats: ['xlsx'],            // (String[]), filetype(s) for the export, (default: ['xlsx', 'csv', 'txt'])
