@@ -2,4 +2,4 @@ __author__ = "roberto munoz garcia"
 
 
 DEBUG = True
-ADMINS = frozenset(["roberto2925@hotmail.com"])
+ADMINS = frozenset(["aqui el email del admin"])

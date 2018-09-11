@@ -4,13 +4,12 @@ __author__ = "roberto munoz garcia"
 
 
 class Database(object):
-    URI = "mongodb://ekpro:ekpro123@ds247330.mlab.com:47330/heroku_7p7jgn5l"
     DATABASE = None
 
     @staticmethod
     def initialize():
-        client = pymongo.MongoClient("mongodb://ekpro:ekpro123@ds247330.mlab.com:47330/heroku_7p7jgn5l")
-        Database.DATABASE = client["heroku_7p7jgn5l"]
+        client = pymongo.MongoClient("aqui la direccion de la BBDD mongoDB")
+        Database.DATABASE = client["aqui el nombre de la BBDD"]
 
     @staticmethod
     def insert(collection, data):

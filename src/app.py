@@ -6,7 +6,7 @@ from src.models.user import User
 __author__ = "roberto munoz garcia"
 
 app = Flask(__name__)
-app.secret_key = "dnH0xA50QiPdFex9Vn7zfORN9q6Z4eTs"
+app.secret_key = "aqui la secret key"
 
 @app.route("/")
 def login_template():
@@ -40,23 +40,23 @@ def login_user():
 @app.route("/nuevo_cliente", methods=["GET", "POST"])
 def add_clients():
     if request.method == "POST":
-        cif = request.form["cif"]
-        direccion = request.form["direccion"]
-        poblacion = request.form["poblacion"]
-        cp = request.form["cp"]
-        provincia = request.form["provincia"]
-        parroquia_razon = request.form["parroquia_razon"]
-        diocesis = request.form["diocesis"]
-        arciprestazgo = request.form["arciprestazgo"]
-        web = request.form["web"]
-        responsable = request.form["responsable"]
-        cargo = request.form["cargo"]
-        dni = request.form["dni"]
-        tfno1 = request.form["tfno1"]
-        tfno2 = request.form["tfno2"]
-        email = request.form["email"]
+        campo1 = request.form["campo1"]
+        campo2 = request.form["campo2"]
+        campo3 = request.form["campo3"]
+        campo4 = request.form["campo4"]
+        campo5 = request.form["campo5"]
+        campo6 = request.form["campo6"]
+        campo7 = request.form["campo7"]
+        campo8 = request.form["campo8"]
+        campo9 = request.form["campo9"]
+        campo10 = request.form["campo10"]
+        campo11 = request.form["campo11"]
+        campo12 = request.form["campo12"]
+        campo13 = request.form["campo13"]
+        campo14 = request.form["campo14"]
+        campo15 = request.form["campo15"]
 
-        add_client = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
+        add_client = Cliente(campo1, campo2, campo3, campo4, campo5, campo6, campo7, campo8, campo9, campo10, campo11, campo12, campo13, campo14, campo15)
         add_client.save_to_mongo()
 
         return render_template("add_client.html", mensaje="Cliente guardado con éxito")
@@ -69,23 +69,23 @@ def add_clients():
 @app.route("/resultado_busqueda", methods=["GET", "POST"])
 def find_and_filter_clients():
     if request.method == "POST":
-        cif = request.form["cif"]
-        direccion = request.form["direccion"]
-        poblacion = request.form["poblacion"]
-        cp = request.form["cp"]
-        provincia = request.form["provincia"]
-        parroquia_razon = request.form["parroquia_razon"]
-        diocesis = request.form["diocesis"]
-        arciprestazgo = request.form["arciprestazgo"]
-        web = request.form["web"]
-        responsable = request.form["responsable"]
-        cargo = request.form["cargo"]
-        dni = request.form["dni"]
-        tfno1 = request.form["tfno1"]
-        tfno2 = request.form["tfno2"]
-        email = request.form["email"]
+        campo1 = request.form["campo1"]
+        campo2 = request.form["campo2"]
+        campo3 = request.form["campo3"]
+        campo4 = request.form["campo4"]
+        campo5 = request.form["campo5"]
+        campo6 = request.form["campo6"]
+        campo7 = request.form["campo7"]
+        campo8 = request.form["campo8"]
+        campo9 = request.form["campo9"]
+        campo10 = request.form["campo10"]
+        campo11 = request.form["campo11"]
+        campo12 = request.form["campo12"]
+        campo13 = request.form["campo13"]
+        campo14 = request.form["campo14"]
+        campo15 = request.form["campo15"]
 
-        query_clients = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email)
+        query_clients = Cliente(campo1, campo2, campo3, campo4, campo5, campo6, campo7, campo8, campo9, campo10, campo11, campo12, campo13, campo14, campo15)
         result = query_clients.find_clients()
 
         return render_template("find_clients.html", result=result)
@@ -108,24 +108,24 @@ def save_edition():
     if request.method == "POST":
         _id = request.form.getlist("_id")
         fecha_alta = request.form.getlist("fecha_alta")
-        cif = request.form.getlist("cif")
-        direccion = request.form.getlist("direccion")
-        poblacion = request.form.getlist("poblacion")
-        cp = request.form.getlist("cp")
-        provincia = request.form.getlist("provincia")
-        parroquia_razon = request.form.getlist("parroquia_razon")
-        diocesis = request.form.getlist("diocesis")
-        arciprestazgo = request.form.getlist("arciprestazgo")
-        web = request.form.getlist("web")
-        responsable = request.form.getlist("responsable")
-        cargo = request.form.getlist("cargo")
-        dni = request.form.getlist("dni")
-        tfno1 = request.form.getlist("tfno1")
-        tfno2 = request.form.getlist("tfno2")
-        email = request.form.getlist("email")
+        campo1 = request.form.getlist("campo1")
+        campo2 = request.form.getlist("campo2")
+        campo3 = request.form.getlist("campo3")
+        campo4 = request.form.getlist("campo4")
+        campo5 = request.form.getlist("campo5")
+        campo6 = request.form.getlist("campo6")
+        campo7 = request.form.getlist("campo7")
+        campo8 = request.form.getlist("campo8")
+        campo9 = request.form.getlist("campo9")
+        campo10 = request.form.getlist("campo10")
+        campo11 = request.form.getlist("campo11")
+        campo12 = request.form.getlist("campo12")
+        campo13 = request.form.getlist("campo13")
+        campo14 = request.form.getlist("campo14")
+        campo15 = request.form.getlist("campo15")
 
-        clients_to_edit = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
-                                responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
+        clients_to_edit = Cliente(campo1, campo2, campo3, campo4, campo5, campo6, campo7, campo8, campo9,
+                                  campo10, campo11, campo12, campo13, campo14, campo15, fecha_alta, _id)
         clients_to_edit.update_clients()
 
         return render_template("home.html", resultado="Edición guardada con éxito")
@@ -147,24 +147,24 @@ def confirm_remove():
     if request.method == "POST":
         _id = request.form.getlist("_id")
         fecha_alta = request.form.getlist("fecha_alta")
-        cif = request.form.getlist("cif")
-        direccion = request.form.getlist("direccion")
-        poblacion = request.form.getlist("poblacion")
-        cp = request.form.getlist("cp")
-        provincia = request.form.getlist("provincia")
-        parroquia_razon = request.form.getlist("parroquia_razon")
-        diocesis = request.form.getlist("diocesis")
-        arciprestazgo = request.form.getlist("arciprestazgo")
-        web = request.form.getlist("web")
-        responsable = request.form.getlist("responsable")
-        cargo = request.form.getlist("cargo")
-        dni = request.form.getlist("dni")
-        tfno1 = request.form.getlist("tfno1")
-        tfno2 = request.form.getlist("tfno2")
-        email = request.form.getlist("email")
+        campo1 = request.form.getlist("campo1")
+        campo2 = request.form.getlist("campo2")
+        campo3 = request.form.getlist("campo3")
+        campo4 = request.form.getlist("campo4")
+        campo5 = request.form.getlist("campo5")
+        campo6 = request.form.getlist("campo6")
+        campo7 = request.form.getlist("campo7")
+        campo8 = request.form.getlist("campo8")
+        campo9 = request.form.getlist("campo9")
+        campo10 = request.form.getlist("campo10")
+        campo11 = request.form.getlist("campo11")
+        campo12 = request.form.getlist("campo12")
+        campo13 = request.form.getlist("campo13")
+        campo14 = request.form.getlist("campo14")
+        campo15 = request.form.getlist("campo15")
 
-        clients_to_remove = Cliente(cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web,
-                                responsable, cargo, dni, tfno1, tfno2, email, fecha_alta, _id)
+        clients_to_remove = Cliente(campo1, campo2, campo3, campo4, campo5, campo6, campo7, campo8, campo9,
+                                    campo10, campo11, campo12, campo13, campo14, campo15, fecha_alta, _id)
         clients_to_remove.remove_client()
 
         return render_template("home.html", resultado="Los datos han sido borrados")

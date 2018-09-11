@@ -6,24 +6,24 @@ __author__ = "Roberto Munoz Garcia"
 
 class Cliente(object):
 
-    def __init__(self, cif, direccion, poblacion, cp, provincia, parroquia_razon, diocesis, arciprestazgo, web, responsable, cargo, dni, tfno1, tfno2, email, fecha_alta=time.strftime("%d/%m/%Y"),_id=None):
+    def __init__(self, campo1, campo2, campo3, campo4, campo5, campo6, campo7, campo8, campo9, campo10, campo11, campo12, campo13, campo14, campo15, fecha_alta=time.strftime("%d/%m/%Y"),_id=None):
         self._id = uuid.uuid4().hex if _id is None else _id
         self.fecha_alta = fecha_alta
-        self.cif = cif
-        self.direccion = direccion
-        self.poblacion = poblacion
-        self.cp = cp
-        self.provincia = provincia
-        self.parroquia_razon = parroquia_razon
-        self.diocesis = diocesis
-        self.arciprestazgo = arciprestazgo
-        self.web = web
-        self.responsable = responsable
-        self.cargo = cargo
-        self.dni = dni
-        self.tfno1 = tfno1
-        self.tfno2 = tfno2
-        self.email = email
+        self.campo1 = campo1
+        self.campo2 = campo2
+        self.campo3 = campo3
+        self.campo4 = campo4
+        self.campo5 = campo5
+        self.campo6 = campo6
+        self.campo7 = campo7
+        self.campo8 = campo8
+        self.campo9 = campo9
+        self.campo10 = campo10
+        self.campo11 = campo11
+        self.campo12 = campo12
+        self.campo13 = campo13
+        self.campo14 = campo14
+        self.campo15 = campo15
 
     def save_to_mongo(self):
         Database.insert(collection="clientes", data=self.json())
@@ -32,21 +32,21 @@ class Cliente(object):
         return {
             "_id": self._id,
             "fecha_alta": self.fecha_alta,
-            "cif": self.cif,
-            "direccion": self.direccion,
-            "poblacion": self.poblacion,
-            "cp": self.cp,
-            "provincia": self.provincia,
-            "parroquia_razon": self.parroquia_razon,
-            "diocesis": self.diocesis,
-            "arciprestazgo": self.arciprestazgo,
-            "web": self.web,
-            "responsable": self.responsable,
-            "cargo": self.cargo,
-            "dni": self.dni,
-            "tfno1": self.tfno1,
-            "tfno2": self.tfno2,
-            "email": self.email,
+            "campo1": self.campo1,
+            "campo2": self.campo2,
+            "campo3": self.campo3,
+            "campo4": self.campo4,
+            "campo5": self.campo5,
+            "campo6": self.campo6,
+            "campo7": self.campo7,
+            "campo8": self.campo8,
+            "campo9": self.campo9,
+            "campo10": self.campo10,
+            "campo11": self.campo11,
+            "campo12": self.campo12,
+            "campo13": self.campo13,
+            "campo14": self.campo14,
+            "campo15": self.campo15,
         }
 
     def find_clients(self):
