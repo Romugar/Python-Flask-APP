@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/rgpd-app.iml" filepath="$PROJECT_DIR$/.idea/rgpd-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Python-Flask-APP.iml" filepath="$PROJECT_DIR$/.idea/Python-Flask-APP.iml" />
     </modules>
   </component>
 </project>
