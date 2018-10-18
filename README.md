@@ -1,13 +1,10 @@
-Aplicación en Python, Flask y mongoDB, preparada para Heroku.
+# REST API APP - Python, Flask y mongoDB, preparada para Heroku.
 
-Login encriptado
+## Funcionalidades:
 
-Lectura de la base de datos con filtrado por campos.
-
-Edición de la base de datos de los registros filtrados
-
-Borra registros filtrados
-
-Añade nuevos registros
-
-Exporta a excel en el cliente con JS los registros filtrados
+1- Sistema de login de usuarios.
+2- Lectura de la base de datos con filtrado por campos, solo devuelve búsquedas que contendan los campos suministrados.
+3- Capacidad de editar los registros devueltos por la busqueda filtrada.
+4- Borrado de los registros devueltos por la búsqueda filtrada.
+5- Añadir nuevos registros
+6- Exportar a excel en el cliente con JavaScript los registros devueltos por lña búsqueda filtrada.
